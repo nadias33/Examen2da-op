@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Loca Navidad</title>
+		<title>Dulce Navidad</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <link rel="icon" type="image/png" href="assets/img/icono.jpeg">
@@ -26,10 +26,10 @@
 		</style>
 	</head>
 	<body>
-		<h1 style="text-align:center;">¡¡FELICES FIESTAS!! :)	</h1>
+		<h1 style="text-align:center;">¡¡FELIZ NAVIDAD Y PROPOSPERO AÑO NUEVO!! :)	</h1>
 		<footer>
-			Nombre: Ortiz Martinez Angel Ibraym.<br>
-			Números de control: 22200198.<br>
+			Alumno: Salvador Bernal Nadia Itzel.<br>
+			No de Control: 22200202.<br>
 		</footer>
 		<script type="importmap">
 			{
@@ -85,7 +85,7 @@
 		scene.add(sunLight);
 	
 		const rgbeLoader = new RGBELoader();
-		rgbeLoader.load('models/rgbe/blaubeuren_church_square_4k.hdr', (texture) => {
+		rgbeLoader.load('models/rgbe/satara_night_4k.hdr', (texture) => {
 			texture.mapping = THREE.EquirectangularReflectionMapping;
 			scene.background = texture;
 			scene.environment = texture;
@@ -95,7 +95,7 @@
 	
 		createChandelier();	
 	const loader = new FBXLoader();
-	loader.load('models/fbx/Silly Dancing.fbx', (object) => {
+	loader.load('models/fbx/Zombie Stand Up.fbx', (object) => {
 		mixer = new THREE.AnimationMixer(object);
 		const action = mixer.clipAction(object.animations[0]);
 		action.play();
